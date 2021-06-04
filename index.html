@@ -54,12 +54,6 @@ body {
 <h3>Hover over the image below to find instructions:</h3>
 <h3>Click on it to see the script!</h3>
     
-<!-- The text field -->
-<input type="text" value="Hello World" id="myInput">
-
-<!-- The button used to copy the text -->
-<button onclick="myFunction()">Copy text</button>
-
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -68,7 +62,8 @@ body {
     <div class="flip-card-back">
       <a href="http://ec2-35-178-62-177.eu-west-2.compute.amazonaws.com/apache.html"><h1>Apache Webserver</h1></a>
       <p>This script installs Apache on your Linux Server</p> 
-      <p>Command: curl -sfL http://ec2-35-178-62-177.eu-west-2.compute.amazonaws.com/apache.html | sh -</p>
+      <p>Command: <input type="text" value="curl -sfL http://ec2-35-178-62-177.eu-west-2.compute.amazonaws.com/apache.html | sh -" id="myInput">
+        <button onclick="myFunction()">Copy text</button></p>
     </div>
   </div>
 </div>
